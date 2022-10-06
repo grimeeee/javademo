@@ -26,7 +26,7 @@ public class Prob05 {
 		
 		double avg = (double)hap/3;
 		String chk= avg>=60 ? "합격" : "불합격";
-		System.out.printf("%.1f점, %s입니다.\n", avg, chk);
+		System.out.printf(" 평균 %.1f점, %s입니다.\n", avg, chk);
         
 	}//end main()
 
