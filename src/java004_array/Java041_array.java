@@ -1,4 +1,4 @@
-package java003_statements;
+package java004_array;
 //https://www.techonthenet.com/unicode/chart.php
 
 public class Java041_array {

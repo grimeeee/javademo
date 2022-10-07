@@ -1,4 +1,4 @@
-package java003_statements;
+package java004_array;
 
 public class Java044_array {
 

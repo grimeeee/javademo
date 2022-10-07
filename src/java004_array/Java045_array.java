@@ -1,4 +1,4 @@
-package java003_statements;
+package java004_array;
 /*
  * [데이터]
  * 홍길동 90 85 40
