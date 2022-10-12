@@ -37,7 +37,7 @@ public class Prob02_class {
 		Book2 bible = new Book2("Bible");
 		Book2 emptyBook = new Book2();
 		/////////여기에 구현하세요.
-		
+	System.out.println(bible.title + " " +bible.author);
 		/////////////////////////////////////
 
 	}//end main( )
