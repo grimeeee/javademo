@@ -21,7 +21,18 @@ package java008_static_access.prob.part01;
 public class Employee {
 	
 	
+	public static void em() {
+		String Name;
+		String Dept;
+		int Pay;
+		double Score;
+	};
+	
+	
+	
 }
+
+
 
 
 
