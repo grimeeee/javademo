@@ -28,7 +28,7 @@ public class Prob001_method {
 
 	public static int[] mergeArray(int[] array1, int[] array2) {
 		// 여기에서 구현하세요.
-		 		
+		System.out.println(result); 		
 		
 		return null;
 	}// end mergeArry()
