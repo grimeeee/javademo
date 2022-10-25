@@ -30,11 +30,11 @@ public class Prob001_Vector {
 		
 		Vector<Book> v=new Vector<Book>();
 		Scanner sc=new Scanner(new 
-				File(".\\src\\java0412_collection\\answ\\booklist.txt"));
-		while(sc.hasNextLine()){
+				File(".\\src\\java017_collection\\answ\\booklist.txt"));
+		while(sc.hasNextLine()){ //한 라인 나누기
 			//SQL Fundmental/SQLBest/Na SQL/47000	
 			String[] line=sc.nextLine().split("/");
-			Book book=new Book(line[0], line[1], line[2], line[3]);
+			Book book=new Book(line[0], line[1], line[2], line[3]); //라인에 있는 인덱스값들을 넣어주기
 			v.add(book);
 		}
 		
