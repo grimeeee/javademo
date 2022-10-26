@@ -6,12 +6,13 @@ import java.util.ArrayList;
 public class BookManager {
 	public static int getRentalPrice(ArrayList<BookDTO> bookList, String kind) {
 		// 구현하세요.
-		BookDTO title = bookList.get(6);
-		System.out.println(title);
-		
-		int rentalPrice = 4; 
-		
-		return rentalPrice;
+		int sum = 0;
+		for(BookDTO dto: bookList) {
+			if(dto.getKind().equals(kind))
+				sum += dto.getRentalPrice();
+		}
+			
+		return sum;
 	}//end getRentalPrice()
 }//end class
 

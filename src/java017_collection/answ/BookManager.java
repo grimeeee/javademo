@@ -9,8 +9,8 @@ public class BookManager {
 		
 		int sum=0;
 		for( BookDTO dto : bookList ){
-			if(dto.getKind().equals(kind)) //Kind가 같으면
-				sum+=dto.getRentalPrice(); //누적시키
+			if(dto.getKind().equals(kind))
+				sum+=dto.getRentalPrice();
 		}
 		return sum;
 	}//end getRentalPrice()

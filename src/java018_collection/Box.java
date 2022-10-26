@@ -4,7 +4,7 @@ public class Box<T> {
 	private T data;
 	
 	public Box() {
-		
+
 	}
 	
 	public Box(T data) {
@@ -15,7 +15,7 @@ public class Box<T> {
 		return data;
 	}
 	
-	public void setData(T data) {
+	public void setData(T Data) {
 		this.data = data;
 	}
 }

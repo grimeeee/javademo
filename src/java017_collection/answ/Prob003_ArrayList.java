@@ -1,5 +1,6 @@
 package java017_collection.answ;
 
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -31,38 +32,37 @@ import java.util.Scanner;
 public class Prob003_ArrayList {
 
 	public static void main(String[] args) {
-		String pathFile = ".\\src\\java017_collection\\answ\\phone.txt";
+		String pathFile=".\\src\\java017_collection\\answ\\phone.txt";
 		ArrayList<SmartPhone> phoneList = phoneProduct(pathFile);
 		prnDisplay(phoneList);
-	}// end main()
-
+	}//end main()
+	
 	private static ArrayList<SmartPhone> phoneProduct(String pathFile) {
 		// phone.txt파일의 데이터를 ArrayList에 저장한후 리턴하는 프로그램을 구현하시오.
-		ArrayList<SmartPhone> data = new ArrayList<SmartPhone>();
+		ArrayList<SmartPhone> data=new ArrayList<SmartPhone>();
 		try {
-			Scanner sc = new Scanner(new File(pathFile));
-			while (sc.hasNextLine()) { // hasNextLine()은 다음에 읽을 값이 있는지 확인하는 불린타입의 메소드로 값이 있으면 트루를 반환
-				String[] line = sc.nextLine().split(":"); // hasNextLine과 NextLine을 사용하기 위해서는 Scanner를 사용해야 한다.
-				// NextLine()은 줄 단위로 값을 읽어온다. 여기서 줄 단위가 아닌 단어를 단위로 하고 싶으면 둘 다 Line을 빼고 사용하면 된다.
-				SmartPhone ss = new SmartPhone();
+			Scanner sc=new Scanner(new File(pathFile));
+			while(sc.hasNextLine()){
+				String[] line=sc.nextLine().split(":");
+				SmartPhone ss=new SmartPhone();
 				ss.setProductId(line[0]);
 				ss.setName(line[1]);
-				ss.setPrice(Integer.parseInt(line[2])); //String to int
+				ss.setPrice(Integer.parseInt(line[2]));
 				ss.setAmount(Integer.parseInt(line[3]));
 				ss.setMaker(line[4]);
-				data.add(ss);
+				data.add(ss);		
 			}
 			sc.close();
-
+			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
 
 		return data;
-	}// end phoneProduct( )
-
-	private static void prnDisplay(ArrayList<SmartPhone> phoneList) {
-		// phoneList매개변수의 저장된 값을 출력하는 프로그램을 구현하시오.
+	}//end phoneProduct( )
+	
+	private static void prnDisplay(ArrayList<SmartPhone> phoneList){
+		//phoneList매개변수의 저장된 값을 출력하는 프로그램을 구현하시오.
 		for (int i = 0; i < phoneList.size(); i++) {
 			System.out.printf("\n<< %d 번째 상품 >>\n", i + 1);
 			System.out.println("제품 아이디 : " + phoneList.get(i).getProductId());
@@ -72,6 +72,17 @@ public class Prob003_ArrayList {
 			System.out.println("제조사 : " + phoneList.get(i).getMaker());
 		}
 
-	}// end prnDisplay( )
+	}//end prnDisplay( )
 
-}// end class
+}//end class
+
+
+
+
+
+
+
+
+
+
+
